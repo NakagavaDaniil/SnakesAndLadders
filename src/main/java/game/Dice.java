@@ -1,8 +1,12 @@
 package game;
 
+import java.util.Random;
+
 public class Dice {
 
+    private Random randomGenerator = new Random();
+    
     public int roll() {
-        return 0;
+        return randomGenerator.nextInt(5) + 1;
     }
 }
